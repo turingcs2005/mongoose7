@@ -1,0 +1,19 @@
+###
+@baseUrl = http://localhost:4455/api
+
+###
+post {{baseUrl}}/addStudent
+Content-Type: application/json
+
+{
+    "name": "Claire",
+    "school": "Boston University",
+    "hobbies": [
+        "piano",
+        "kayaking",
+        "hiking"
+    ]
+}
+
+###
+get {{baseUrl}}/getStudentByName/Claire
