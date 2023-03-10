@@ -11,16 +11,14 @@ app.use(express.urlencoded({extended: false}));
 
 // connecting to MongoDB database
 const MongoDB_Connection_String = 'mongodb://localhost/test';
-async function connectToMongoDB() {
+(async function connectToMongoDB() {
     try {
         await mongoose.connect(MongoDB_Connection_String);
         console.log('MongoDB database successfully connected!');
     } catch (e) {
         console.log('MongoDB database connection error: ', e);
     }
-}
-
-connectToMongoDB();
+})();
 
 const studentRoutes = require('./routes/student.route');
 app.use('/api', studentRoutes);
