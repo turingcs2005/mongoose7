@@ -7,11 +7,10 @@ Content-Type: application/json
 
 {
     "name": "Claire",
-    "school": "Boston University",
+    "school": "Boston College",
     "hobbies": [
-        "piano",
-        "kayaking",
-        "hiking"
+        "hiking",
+        "sailing"
     ]
 }
 
